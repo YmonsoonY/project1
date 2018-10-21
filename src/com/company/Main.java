@@ -160,7 +160,7 @@ public class Main {
     public  static void demoFunction(){
         Random random = new Random();
 //        random.setSeed(1);
-        print(1,random.nextInt());
+        print(1,random.nextInt()); // 产生随机数的方式是伪随机的，给定的seed，产生的随机数是固定的。nextInt(n)产生[0,n)的数
         print(2,random.nextFloat()); //默认是0~1之间的
 
         List<Integer> array = Arrays.asList(new Integer[]{1,2,3,4,5});
